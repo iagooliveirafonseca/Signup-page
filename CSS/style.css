@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:62.5%; /* 1rem = 10px */
+}
+
+/*=====================================BODY================================*/
+
+body{
+    width: 100%;
+    height: 95rem;
+    background: url(../images/bg-intro-desktop.png) 
+hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+
+/*================================FIRST-CONTAINER================================*/
+
+#first-container{
+    width: 60rem;
+    height: 23rem;
+}
+
+#first-container h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+}
+
+#first-container p{
+    font-size: 1.7rem;
+}
+
+
+/*================================SECOND-CONTAINER================================*/
+#second-container{
+    width: 60rem;
+    height: 60rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/*================================MINI-CONTAINER-ONE-PURPLE================================*/
+#second-container .mini-container-one-purple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    height: 6rem;
+    background-color: hsl(248, 32%, 49%);
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    box-shadow: 0px 7px  rgba(0, 0, 0, 0.2);
+}
+
+#second-container .mini-container-one-purple a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    
+}
+
+#second-container .mini-container-one-purple p{
+    color: hsl(246, 25%, 77%) ;
+
+}
+/*================================MINI-CONTAINER-ONE-WHITE================================*/
+.mini-container-second-white{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2.5rem;
+    width: 60rem;
+    height: 55rem;
+    background-color: #ffffff;
+    font-weight: 900;
+    border-radius: 1rem;
+    box-shadow: 0px 7px  rgba(0, 0, 0, 0.2);
+}
+
+.mini-container-second-white form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 40rem;
+}
+
+
+.mini-container-second-white input {
+    width: 85%;
+    height: 6rem;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+    border:0.1rem solid hsl(246, 25%, 77%);
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.mini-container-second-white #btn {
+    width: 85%;
+    height: 6rem;
+    padding-left: inherit;
+    margin-bottom: 2rem;
+    background-color:  hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    box-shadow:  0px 3px hsl(154, 57%, 49%);
+    font-weight: 400;
+
+
+}
+
+.mini-container-second-white p{
+    color: hsl(246, 25%, 77%);
+   
+    
+}
+
+.mini-container-second-white a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 900;
+ 
+   
+}
+
+.footer-card{
+    width: initial;
+}
+
+/*================================RESPONSIVE================================*/
+
+@media only screen and (max-width: 1136px) {
+    body{
+        background: url(../images/bg-intro-mobile.png) 
+    hsl(0, 100%, 74%);
+        flex-direction: column;
+        height: auto;
+    }
+
+    /*================================FIRST-CONTAINER================================*/
+
+    #first-container{
+        width: 30rem;
+        height: 20rem;
+        text-align: center;
+        margin-top: 5rem;
+       
+    }
+
+    #first-container h1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #first-container p{
+        font-size: 1.5rem;
+    }
+    
+    /*================================SECOND-CONTAINER================================*/
+    #second-container{
+        width: 30rem;
+        height: 30rem; 
+        font-size: 1.2rem;
+        margin-top: 15rem;
+    }
+
+    /*================================MINI-CONTAINER-ONE-PURPLE================================*/
+    #second-container .mini-container-one-purple{
+    width: 30rem;
+    padding: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0rem;
+    }
+
+    /*================================MINI-CONTAINER-ONE-WHITE================================*/
+    .mini-container-second-white{
+    margin-top:2.5rem;
+    width: 30rem;
+    height: 50rem;
+    padding: 1rem;
+    }
+
+    .mini-container-second-white form{
+    width: 30rem;
+    height: 35rem;
+    }
+
+
+    .mini-container-second-white input {
+    height: 5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+    border:0.1rem solid hsl(246, 25%, 77%);
+    font-weight: 900;
+    font-size: 1.4rem;
+
+    }
+
+    .mini-container-second-white #btn {
+    width: 85%;
+    height: 5rem;
+    padding-left: inherit;
+    margin-bottom: initial;
+    background-color:  hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    box-shadow:  0px 3px hsl(154, 57%, 49%);
+
+
+    }
+
+    .mini-container-second-white p{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 1rem;
+    }
+
+    .mini-container-second-white a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 900;
+   
+ 
+   
+    }
+
+    .footer-card{
+        width: 22rem;
+    }
+  
+  }
